@@ -1,0 +1,191 @@
+/* Main App Background */
+.stApp {
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background: rgba(15, 15, 30, 0.95) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-testid="stSidebar"] h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* File Uploader */
+[data-testid="stFileUploader"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(139, 92, 246, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: rgba(139, 92, 246, 0.6);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Buttons */
+.stButton button {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.status-success {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-error {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-warning {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.status-info {
+    background: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Chat Messages */
+.stChatMessage {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    margin: 0.5rem 0 !important;
+    backdrop-filter: blur(10px);
+}
+
+[data-testid="stChatMessageContent"] {
+    color: #e5e7eb;
+}
+
+/* User Messages */
+.stChatMessage[data-testid*="user"] {
+    background: rgba(99, 102, 241, 0.1) !important;
+    border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Assistant Messages */
+.stChatMessage[data-testid*="assistant"] {
+    background: rgba(139, 92, 246, 0.1) !important;
+    border-color: rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Chat Input */
+[data-testid="stChatInput"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    color: #fff !important;
+}
+
+[data-testid="stChatInput"]:focus {
+    border-color: rgba(139, 92, 246, 0.5) !important;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Expander (Context Viewer) */
+.streamlit-expanderHeader {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    color: #a78bfa !important;
+    font-weight: 500;
+}
+
+.streamlit-expanderContent {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Info/Warning/Success Boxes */
+.stAlert {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-left: 4px solid #6366f1 !important;
+    border-radius: 8px !important;
+    color: #e5e7eb !important;
+}
+
+/* Text Elements */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+}
+
+p, span, div {
+    color: #d1d5db;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 92, 246, 0.7);
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-top-color: #8b5cf6 !important;
+}
+
+/* Code Blocks */
+code {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: #a78bfa !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+pre {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
