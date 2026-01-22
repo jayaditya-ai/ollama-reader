@@ -23,11 +23,6 @@ echo Checking Python packages...
 python -m pip install -q streamlit PyPDF2 chromadb langchain-text-splitters requests
 
 echo.
-echo Checking AI models (first run will download ~2.3GB)...
-ollama pull llama3.2
-ollama pull nomic-embed-text
-
-echo.
 echo Starting web interface...
 echo.
 echo ==========================================
